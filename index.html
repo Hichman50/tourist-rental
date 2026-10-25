@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tourist Equipment Rental Platform</title>
+  <meta name="description" content="Rent tents, backpacks and hiking gear by the day. Calculate your rental price online.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#top">Trail&nbsp;Rent</a>
+
+    <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-label="Toggle menu">
+    <label for="menu-toggle" class="burger" aria-hidden="true"><span></span></label>
+
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#tents">Tents</a></li>
+        <li><a href="#backpacks">Backpacks</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#price-list">Price List</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Don't Buy Gear — Rent It!</h1>
+      <p>Tents, backpacks and camp equipment for a weekend or a full trek. Pick it up, use it, bring it back.</p>
+      <a class="cta" href="#tents">Choose Equipment</a>
+    </section>
+
+    <!-- GRID: TENTS -->
+    <section id="tents" class="catalog">
+      <h2>Tents</h2>
+      <ul class="grid">
+        <li>
+          <article class="card">
+            <h3>Alpine Duo 2</h3>
+            <p class="card-desc">Two-person, three-season tent with a full-length rainfly.</p>
+            <dl class="specs">
+              <dt>Weight</dt><dd>2.1 kg</dd>
+              <dt>Packed size</dt><dd>45 × 15 cm</dd>
+              <dt>Capacity</dt><dd>2 people</dd>
+            </dl>
+            <p class="price"><strong>2 500 ₸</strong> / day</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Taiga Family 4</h3>
+            <p class="card-desc">Roomy four-person tent with a vestibule for boots and bags.</p>
+            <dl class="specs">
+              <dt>Weight</dt><dd>4.8 kg</dd>
+              <dt>Packed size</dt><dd>60 × 22 cm</dd>
+              <dt>Capacity</dt><dd>4 people</dd>
+            </dl>
+            <p class="price"><strong>4 200 ₸</strong> / day</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Summit Solo 1</h3>
+            <p class="card-desc">Ultralight single tent for fast and light mountain trips.</p>
+            <dl class="specs">
+              <dt>Weight</dt><dd>1.3 kg</dd>
+              <dt>Packed size</dt><dd>40 × 12 cm</dd>
+              <dt>Capacity</dt><dd>1 person</dd>
+            </dl>
+            <p class="price"><strong>1 900 ₸</strong> / day</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- GRID: BACKPACKS -->
+    <section id="backpacks" class="catalog">
+      <h2>Backpacks</h2>
+      <ul class="grid">
+        <li>
+          <article class="card">
+            <h3>Ridge 65</h3>
+            <p class="card-desc">Multi-day trekking pack with an adjustable back system.</p>
+            <dl class="specs">
+              <dt>Weight</dt><dd>2.0 kg</dd>
+              <dt>Dimensions</dt><dd>75 × 35 × 25 cm</dd>
+              <dt>Volume</dt><dd>65 L</dd>
+            </dl>
+            <p class="price"><strong>1 800 ₸</strong> / day</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Pathfinder 40</h3>
+            <p class="card-desc">Comfortable pack for weekend hikes, with a rain cover included.</p>
+            <dl class="specs">
+              <dt>Weight</dt><dd>1.2 kg</dd>
+              <dt>Dimensions</dt><dd>60 × 30 × 20 cm</dd>
+              <dt>Volume</dt><dd>40 L</dd>
+            </dl>
+            <p class="price"><strong>1 200 ₸</strong> / day</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Camp Stove Set</h3>
+            <p class="card-desc">Compact gas burner with a pot, ready for a hot meal at camp.</p>
+            <dl class="specs">
+              <dt>Weight</dt><dd>0.6 kg</dd>
+              <dt>Dimensions</dt><dd>12 × 12 × 10 cm</dd>
+              <dt>Boil time</dt><dd>3 min / 1 L</dd>
+            </dl>
+            <p class="price"><strong>900 ₸</strong> / day</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PRICE LIST -->
+    <section id="price-list" class="info">
+      <h2>Price List</h2>
+      <dl class="prices">
+        <dt>Alpine Duo 2</dt><dd>2 500 ₸ / day</dd>
+        <dt>Taiga Family 4</dt><dd>4 200 ₸ / day</dd>
+        <dt>Summit Solo 1</dt><dd>1 900 ₸ / day</dd>
+        <dt>Ridge 65</dt><dd>1 800 ₸ / day</dd>
+        <dt>Pathfinder 40</dt><dd>1 200 ₸ / day</dd>
+        <dt>Camp Stove Set</dt><dd>900 ₸ / day</dd>
+      </dl>
+      <p class="note">Discounts: 10% from 3 days, 20% from 7 days.</p>
+    </section>
+
+    <!-- TERMS -->
+    <section id="terms" class="info">
+      <h2>Terms</h2>
+      <ol>
+        <li>Bring an ID card or passport when you pick up the gear.</li>
+        <li>A deposit equal to one day of rental is returned when you bring the gear back clean and undamaged.</li>
+        <li>Late returns are charged as an extra day of rental.</li>
+        <li>Lost or damaged items are paid at the replacement cost.</li>
+      </ol>
+    </section>
+
+    <!-- FEEDBACK FORM / CALCULATOR -->
+    <section id="rental" class="rental" aria-labelledby="rental-title">
+      <h2 id="rental-title">Calculate your rental</h2>
+      <form id="rental-form" action="#" method="post">
+        <label for="item">Equipment</label>
+        <select id="item" name="item" required>
+          <option value="" data-price="0">Select an item</option>
+          <option value="alpine-duo-2" data-price="2500">Alpine Duo 2 — 2 500 ₸</option>
+          <option value="taiga-family-4" data-price="4200">Taiga Family 4 — 4 200 ₸</option>
+          <option value="summit-solo-1" data-price="1900">Summit Solo 1 — 1 900 ₸</option>
+          <option value="ridge-65" data-price="1800">Ridge 65 — 1 800 ₸</option>
+          <option value="pathfinder-40" data-price="1200">Pathfinder 40 — 1 200 ₸</option>
+          <option value="camp-stove" data-price="900">Camp Stove Set — 900 ₸</option>
+        </select>
+
+        <label for="issue">Issue Date</label>
+        <input type="date" id="issue" name="issue" required>
+
+        <label for="return">Return Date</label>
+        <input type="date" id="return" name="return" required>
+
+        <label for="name">Contact person</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" minlength="2" required>
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 700 123 45 67" autocomplete="tel" pattern="\+?[0-9\s\-()]{10,18}" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+
+        <p class="result" aria-live="polite">
+          <span id="days-text">Choose an item and dates to see the price.</span>
+          <output id="total" for="item issue return"></output>
+        </p>
+
+        <button type="submit" class="cta">Send request</button>
+        <p id="form-message" class="form-message" role="status" hidden></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <section aria-labelledby="f-rules">
+      <h2 id="f-rules">Safety rules</h2>
+      <p>Before a trip, follow the rules of the Ministry of Emergency Situations (EMERCOM). Tell someone your route and return time. In an emergency call <strong>112</strong>.</p>
+      <a href="https://www.gov.kz/memleket/entities/emer?lang=en" target="_blank" rel="noopener">EMERCOM regulations</a>
+    </section>
+
+    <nav aria-label="Footer navigation">
+      <h2>Map tracks</h2>
+      <ul>
+        <li><a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a></li>
+        <li><a href="https://www.alltrails.com" target="_blank" rel="noopener">AllTrails</a></li>
+        <li><a href="https://www.wikiloc.com" target="_blank" rel="noopener">Wikiloc</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="f-theme">
+      <h2 id="f-theme">Appearance</h2>
+      <input type="checkbox" id="theme-toggle" class="visually-hidden">
+      <label for="theme-toggle" class="switch">
+        <span class="switch-track"></span>
+        <span class="switch-text">Light / Forest Dark</span>
+      </label>
+    </section>
+
+    <p class="legal">© 2026 Tourist Equipment Rental Platform. All rights reserved. Prices are shown in Kazakhstani tenge and may change.</p>
+  </footer>
+
+</body>
+</html>
